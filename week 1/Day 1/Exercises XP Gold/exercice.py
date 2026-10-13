@@ -76,19 +76,25 @@ import random
 
 hnumber2 = int((random.random()*9)+1)
 keep_gessing = True
+i= 0
+j=0
 
 
 while keep_gessing:
   number = int(input("Enter a number entre 1 et 9:"))
   if number == hnumber2 :
     print ("winner")
+    i=+1
   else:
       print(" better luck next time")
+      j=+1
   anser = input("you want to quit :")
+
+
   if anser == "yes":
      keep_gessing = False
-
-print("1")
+     
+print(f"you win {i} and you lose {j}")
 
 
 
