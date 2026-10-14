@@ -86,5 +86,92 @@ def numbers (num):
         print(f"fail message your number is {num} and the random number is {ran_number}")
 
 numbers()
+# exercice 6
+def make_shirt(size = "large" ,text = " i love python "):
+    print (f"the size of the shirt is {size} and the text is {text}")
 
+make_shirt()
+make_shirt("medium")
+make_shirt(size="medium", text="Hello World")
 
+# exercice 7
+def get_random_temp(season):
+   def get_random_temp(season):
+    if season == "winter":
+        return random.randint(-10, 16)
+    elif season == "spring":
+        return random.randint(5, 25)
+    elif season == "summer":
+        return random.randint(20, 40)
+    elif season == "autumn" or season == "fall":
+        return random.randint(10, 30)
+    else:
+        return None
+
+def main():
+    season = input("enter a season :")
+    
+    tem = get_random_temp(season)
+    print(f"the temperature right now is {tem} degrees celsius.")
+    if tem < 0 :
+        print("Brrr, that’s freezing! Wear some extra layers today")
+    elif tem  <= 16:
+        print("quite chilly ! don t forget your coat")
+    elif tem <= 23:
+        print("The weather is mild. Enjoy your day!")
+    elif tem <= 32:
+        print("It's warm outside!")
+    else:
+         print("It's hot! Stay hydrated.")
+
+main()
+
+    #exercice 8
+
+data = [
+    {
+        "question": "What is Baby Yoda's real name?",
+        "answer": "Grogu"
+    },
+    {
+        "question": "Where did Obi-Wan take Luke after his birth?",
+        "answer": "Tatooine"
+    },
+    {
+        "question": "What year did the first Star Wars movie come out?",
+        "answer": "1977"
+    },
+    {
+        "question": "Who built C-3PO?",
+        "answer": "Anakin Skywalker"
+    },
+    {
+        "question": "Anakin Skywalker grew up to be who?",
+        "answer": "Darth Vader"
+    },
+    {
+        "question": "What species is Chewbacca?",
+        "answer": "Wookiee"
+    }
+]
+
+wrong_answers = []
+correct = 0
+incorrect = 0
+
+def ask ():
+    for i in data:
+       print(i["question"])
+       user_answer = input("your answer : ")
+       if user_answer == ["answer"]:
+           print("correct")
+           correct=+1
+       else:
+           print("incorrect")
+           wrong_answers.append(user_answer)
+           incorrect=+1
+
+    
+
+    
+    
