@@ -50,3 +50,17 @@ if sarahs_dog.height > davids_dog.height:
     print(sarahs_dog.name)
 else:
     print(davids_dog.name)
+
+# exercice 3
+
+class Song :
+    lyrics = []
+    def __init__(self,lyrics):
+        self.lyrics = lyrics
+    def sing_me_a_song(self):
+        for line in self.lyrics:
+            print(line)
+        
+stairway= Song(["There’s a lady who's sure","all that glitters is gold", "and she’s buying a stairway to heaven"])
+stairway.sing_me_a_song()
+# Exercice 4
