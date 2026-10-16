@@ -113,6 +113,7 @@ new_york_zoo.get_animals()
 new_york_zoo.get_groups()
 
 new_york_zoo.sell_animal("Bear")
+
 new_york_zoo.get_animals()
 
 new_york_zoo.get_groups()
