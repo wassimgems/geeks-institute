@@ -66,23 +66,23 @@ stairway.sing_me_a_song()
 # Exercice 4
 class zoo :
     def __init__(self , zoo_name):
-        animals = []
+        self.animals = []
         self.name = zoo_name
     def add_animals(self,new_animal):
             if new_animal not in self.animals:
-                self.animals.apprend()
+                self.animals.append(new_animal)
     def get_animals(self):
         print (self.animals)
-    def sell_animal(self,animal_sold):
+    def sell_animal(self, animal_sold):
         if animal_sold in self.animals:
             self.animals.remove(animal_sold)
     def sort_animals(self):
-          for letter in self.animal:
+          for animal in self.animals:
               letter = self.animals[0]
               result = {}
 
               if letter not in result:
-                result[letter] = self.animal
+                result[letter] = self.animals
               elif isinstance(result[letter], str):
                 result[letter] = [result[letter], self.animal]
               else:
@@ -108,6 +108,7 @@ new_york_zoo.add_animals("Baboon")
 new_york_zoo.add_animals("Cat")
 
 
+
 new_york_zoo.get_animals()
 
 new_york_zoo.get_groups()
@@ -117,4 +118,3 @@ new_york_zoo.sell_animal("Bear")
 new_york_zoo.get_animals()
 
 new_york_zoo.get_groups()
-
