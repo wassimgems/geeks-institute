@@ -34,10 +34,11 @@ class Game:
         elif user_item == "r" and computer_item =="p":
             return"lose"
     
-def play(self):
- user_items = self.get_user_item()
- computer_item = self.get_computer_item()
- result = self.get_game_result(user_items, computer_item)
- print(f" you selcted {user_items}")
- print(f" The computer selected {computer_item}")
- print(f" you {result}!")
+    def play(self):
+       user_items = self.get_user_item()
+       computer_item = self.get_computer_item()
+       result = self.get_game_result(user_items, computer_item)
+       print(f" you selcted {user_items}")
+       print(f" The computer selected {computer_item}")
+       print(f" you {result}!")
+       return result
