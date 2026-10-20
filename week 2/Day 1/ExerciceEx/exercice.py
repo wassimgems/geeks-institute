@@ -1,3 +1,6 @@
+ 
+# Exercise 1
+
 class Pets():
     def __init__(self, animals):
         self.animals = animals
@@ -27,5 +30,14 @@ class Chartreux(Cat):
     def sing(self, sounds):
         return f'{sounds}'
 
+class Siamese(Cat):
+    pass
 
-cat = Cat("Siamese", 4)
+
+cat1 = Bengal("Milo", 3)
+cat2 = Chartreux("Luna", 2)
+cat3 = Siamese("Simba", 1)
+
+all_cats = [ cat1, cat2, cat3]
+sara_pets = Pets(all_cats)
+sara_pets.walk()
