@@ -72,3 +72,38 @@ dog3 = Dog("mal", 6, 9)
 
 print(dog1.run_speed())
 print(dog1.fight(dog2))
+
+# Exercice 3
+
+class Family:
+    def __init__(self, members, last_name):
+        self.members = members
+        self.last_name = last_name
+   
+    def born(self, **kwargs):
+         self.members.append(kwargs)
+         print(f"Congratulations to the {self.last_name} family!")
+    def is_18(self, name):
+         for member in self.members:
+          if member["name"] == name:
+              return member["age"] > 18
+          return False
+    def family_presentation(self):
+        print(f"family name is {self.last_name}")
+        for member in self.members:
+            print(member)
+
+
+members = [
+    {"name": "Sara", "age": 25, "gender": "female"},
+    {"name": "Adam", "age": 15, "gender": "male"}
+]
+
+family = Family(members, "Alami")
+
+family.born(name="Lina", age=0, gender="female")
+
+print(family.is_18("Sara"))
+print(family.is_18("Adam"))
+
+family.family_presentation()
