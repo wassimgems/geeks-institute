@@ -22,17 +22,17 @@ class Game:
         if user_item == computer_item:
             return "draw"
         elif user_item == "r" and computer_item =="p":
-            return "lose"
+            return "loss"
         elif user_item == "r" and computer_item =="s":
-            return "won"
+            return "win"
         elif user_item == "p" and computer_item =="r":
-            return "won"
+            return "win"
         elif user_item == "p" and computer_item =="s":
-            return "lose"
+            return "loss"
         elif user_item == "s" and computer_item =="p":
-            return"won"
+            return"win"
         elif user_item == "r" and computer_item =="p":
-            return"lose"
+            return"loss"
     
     def play(self):
        user_items = self.get_user_item()
