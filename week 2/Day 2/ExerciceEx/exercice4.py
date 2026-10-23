@@ -1,0 +1,2 @@
+from exercice import Dog 
+
