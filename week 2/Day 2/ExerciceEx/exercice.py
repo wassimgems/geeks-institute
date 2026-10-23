@@ -14,3 +14,7 @@ def sum_numbers(list):
           return variable
 my_list = [2, 3, 1, 2, "four", 42, 1, 5, 3, "imanumber"]
 print(sum_numbers(my_list))
+#  output is 59
+
+
+
