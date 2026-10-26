@@ -7,4 +7,14 @@ class TextAnalyzer:
         else:
            self.text = text
     def __str__(self):
-       pass
+        return self.text
+    def __len__(self):
+        return len(self.text)
+    def word_count(self):
+        return len(self.text.split())
+    def count_word(self, word):
+        if not word:
+            raise Exception("Word cannot be empty")
+        return self.text.split().count(word)
+       
+   
