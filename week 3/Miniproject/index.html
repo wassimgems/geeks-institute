@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Console Showcase Vault</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="app-header">
+        <div class="logo">
+            <h1>🎮 RetroVault</h1>
+        </div>
+        <div class="search-bar">
+            <input type="search" id="search-input" placeholder="Search consoles...">
+        </div>
+    </header>
+
+    <section class="controls">
+        <div id="category-filters" class="filter-buttons">
+            <button class="filter-btn active" data-category="All">All</button>
+            <button class="filter-btn" data-category="Home Console">Home Consoles</button>
+            <button class="filter-btn" data-category="Handheld">Handhelds</button>
+            <button class="filter-btn" data-category="Hybrid">Hybrids</button>
+        </div>
+        <div class="sort-area">
+            <select id="sort-select">
+                <option value="default">Sort By</option>
+                <option value="title-asc">Title (A-Z)</option>
+                <option value="title-desc">Title (Z-A)</option>
+            </select>
+        </div>
+    </section>
+
+    <main>
+        <div id="cards-grid" class="cards-grid">
+        </div>
+
+        <div id="empty-state" class="empty-state hidden">
+            <p>No items found matching your criteria.</p>
+        </div>
+    </main>
+
+    <dialog id="item-modal" class="modal">
+        <div class="modal-content">
+            <button id="close-modal" class="close-btn">&times;</button>
+            <div id="modal-body">
+            </div>
+        </div>
+    </dialog>
+
+    
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
