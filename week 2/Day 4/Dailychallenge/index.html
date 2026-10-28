@@ -4,22 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
-      <div>
-        <nav>
+    <header class="sheader">
+      <div class="hcontainer ">
+        <a href="#" class="logo">Form Audio</a>
+        <nav class="nlinks">
            <a href="#products">Shop</a>
            <a href="#">About</a>
            <a href="#">Support</a>
         </nav>
-        <div>Cart (0)</div>
+        <div class="clabel">Cart (0)</div>
       </div>
     </header>
-    <main>
-    <section> <!-- first  section -->
-        <div>
+  <main>
+
+    <section class="hsection"> <!-- first  section -->
+        <div class="hero-container">
            <div>
             <span class="">SOUND, REDEFINED</span>
             <h1>Your world. On mute.</h1>
@@ -33,47 +36,63 @@
     <section>
         <div>
             <h2>find you frequency </h2>
+            <div class="container">
+                  <!--card 1-->
+                    <div class="product-card featured">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=500&q=80" alt="Studio One wireless studio headphones">
+                        </div>
+                        <div class="card-content">
+                            <h3>Studio One</h3>
+                            <p class="price">$149</p>
+                            <p>Built for what moves you.</p>
+                            <button class="btn-add">Add to cart</button>
+                        </div>
+                    </div>
+                  
+                    <!-- Card 2 -->
+                    <div class="product-card">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=500&q=80" alt="Pocket Pods wireless earbuds in charging case">
+                        </div>
+                        <div class="card-content">
+                            <h3>Pocket Pods</h3>
+                            <p class="price">$89</p>
+                            <p>Big sound. Small package.</p>
+                            <button class="btn-add">Add to cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="product-card">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=500&q=80" alt="Move Mini portable headphones">
+                        </div>
+                        <div class="card-content">
+                            <h3>Move Mini</h3>
+                            <p class="price">$69</p>
+                            <p>Take great sound further.</p>
+                            <button class="btn-add">Add to cart</button>
+                        </div>
+                    </div>
+            </div>    
         </div>
     </section>    
-    
+  </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </section>
-
-
-
-
-
-
-
-
-
-
-    </main>
-
-
-
-
-
-
-
-
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <span class="logo">Form Audio</span>
+                <p>Designed for your everyday.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#products">Shop</a>
+                <a href="#">About</a>
+                <a href="#">Support</a>
+            </div>
+        </div>
+    </footer>
 
 </body>
-</html>j
+</html>
