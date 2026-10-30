@@ -1,8 +1,11 @@
 
 
-# exercice 1
+/* exercice 1 */
 
 const people = ["Greg", "Mary", "Devon", "James"];
+people.splice(0, 1);
 
-people.pop
+people[3] = "jason"
 
+
+console.log(people)
