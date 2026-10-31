@@ -5,7 +5,9 @@
 const people = ["Greg", "Mary", "Devon", "James"];
 people.splice(0, 1);
 
-people[3] = "jason"
+people[2] = "jason"
+
+
 
 
 console.log(people)
