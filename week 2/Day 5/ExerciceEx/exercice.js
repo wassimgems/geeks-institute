@@ -105,3 +105,14 @@ for (let keys in details) {
      sentence += keys + ' ' + details[keys] + ' ';
 }
 console.log(sentence);
+
+// exercice 7
+
+const names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
+
+const sscret = names
+
+.map(name => name[0])
+.sort()
+.join('');
+console.log(sscret)
