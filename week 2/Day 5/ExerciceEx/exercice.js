@@ -76,4 +76,32 @@ if ( sum > building.numberOfRoomsAndRent.david[1] ){
     building.numberOfRoomsAndRent.dan[1] = 1200;
 }
 
-// e
+// exercice 5
+
+
+const family = {
+    parents: "Alice",
+    children: "Charlie",
+    lastName: "Smith",
+};
+
+for ( let key in family){
+    console.log(key);
+}
+for (let key in family){
+    console.log(family[key])
+}
+
+// exercice 6
+
+const details = {
+  my: 'name',
+  is: 'Rudolf',
+  the: 'reindeer'
+}
+
+let sentence = '';
+for (let keys in details) {
+     sentence += keys + ' ' + details[keys] + ' ';
+}
+console.log(sentence);
