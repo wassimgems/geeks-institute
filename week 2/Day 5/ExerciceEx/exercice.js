@@ -39,3 +39,41 @@ for ( let i = 0 ; i < colors.length ; i++ ){
 // exercice 3
 
 
+let  number = prompt("entre a number")
+console.log(typeof number);
+number = Number(number);
+
+while (number < 10) {
+    number = Number(prompt ("Enter number greater than 10"));
+}
+alert(" Good ");
+
+// exercice 4
+
+const building = {
+    numberOfFloors: 4,
+    numberOfAptByFloor: {
+        firstFloor: 3,
+        secondFloor: 4,
+        thirdFloor: 9,
+        fourthFloor: 2,
+    },
+    nameOfTenants: ["Sarah", "Dan", "David"],
+    numberOfRoomsAndRent:  {
+        sarah: [3, 990],
+        dan:  [4, 1000],
+        david: [1, 500],
+    },
+}
+
+console.log(building.numberOfFloors)
+console.log (building.numberOfAptByFloor.firstFloor)
+console.log (building.numberOfAptByFloor.secondFloor)
+console.log(building.nameOfTenants[1])
+
+let sum = building.numberOfRoomsAndRent.sarah[1] + building.numberOfRoomsAndRent.dan[1]
+if ( sum > building.numberOfRoomsAndRent.david[1] ){
+    building.numberOfRoomsAndRent.dan[1] = 1200;
+}
+
+// e
